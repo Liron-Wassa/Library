@@ -9,7 +9,7 @@ Live link: https://liron-wassa.github.io/Rock-Paper-Scissors-js/
 - CSS
 
 ## Illustration
-<img src="https://user-images.githubusercontent.com/56726154/74052105-fbd91a80-49e1-11ea-821f-9d3dcd87a735.png" width="500"/>
+<img src="https://user-images.githubusercontent.com/56726154/77358871-5b517680-6d53-11ea-9f06-5675ddddf41c.png" width="500"/>
 
 ## How to use?
 - click on the "Remove" button in order to remove book from favorite
