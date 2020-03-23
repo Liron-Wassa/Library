@@ -4,7 +4,7 @@ Library React Hooks
 Live link: https://liron-wassa.github.io/Library/#/
 
 ## Technologies
-- ReactJS
+- React Hooks
 - Bootstrap
 - CSS
 
@@ -14,7 +14,7 @@ Live link: https://liron-wassa.github.io/Library/#/
 ## How to use?
 - click on the "Remove" button in order to remove book from favorite
 - click on the "Add to favorite" button in order to add book to favorite
-- to search a book go to the home page and and enter a book
+- to search a book go to the home page and enter a book
 
 ## Functionalities
  Search book, Add to favorite, Remove from favorite, Show description
