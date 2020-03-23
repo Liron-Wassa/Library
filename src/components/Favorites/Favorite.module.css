@@ -1,0 +1,32 @@
+.FavoriteList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.List{
+    margin-top: 40px;
+    width: 19rem;
+    box-shadow: 5px 5px 5px #888888;
+    background-color: rgb(241, 241, 182);
+    transition: all ease-in-out 1s;
+}
+
+.image{
+    height: 200px;
+}
+
+.List:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 5px 5px 5px #888888;
+    transition: all ease-in-out 1s;
+}
+
+.header{
+    color: white;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}

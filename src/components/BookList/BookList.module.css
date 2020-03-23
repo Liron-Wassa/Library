@@ -1,0 +1,14 @@
+.BookList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.error{
+    color: white;
+}
+
+.pagination{
+   display: flex;
+   justify-content: center;
+}

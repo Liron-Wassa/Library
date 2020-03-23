@@ -1,0 +1,15 @@
+.icon{
+    position: absolute;
+    top: 7px;
+}
+
+.navBar{
+    text-decoration: none;
+    color: rgb(110, 109, 109);
+    padding-right: 10px;
+}
+
+.navBar:hover{
+    text-decoration: none;
+    color: rgb(150, 145, 145);
+}

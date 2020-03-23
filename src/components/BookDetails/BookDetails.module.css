@@ -1,0 +1,25 @@
+.List{
+    margin-top: 40px;
+    width: 18rem;
+    box-shadow: 3px 3px 3px #888888;
+    background-color: rgb(241, 241, 182);
+    transition: all ease-in-out 1s;
+}
+
+.unList{
+    margin-top: 40px;
+    width: 18rem;
+    box-shadow: 3px 3px 3px #888888;
+    background-color: rgb(163, 160, 160);
+    transition: all ease-in-out 1s;
+}
+
+.image{
+    height: 200px;
+}
+
+.List:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: 5px 5px 5px #888888;
+    transition: all ease-in-out 1s;
+}
