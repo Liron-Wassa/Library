@@ -1,7 +1,7 @@
 # Introduction
 Library React Hooks
 <br/>
-Live link: https://liron-wassa.github.io/Rock-Paper-Scissors-js/
+Live link: https://liron-wassa.github.io/Library/#/
 
 ## Technologies
 - ReactJS
