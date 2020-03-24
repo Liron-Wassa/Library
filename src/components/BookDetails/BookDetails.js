@@ -4,7 +4,7 @@ import classes from './BookDetails.module.css';
 import React, { useContext } from 'react';
 
 function BookDetails({ book, bookId, setDescription }) {
-
+    
     const { addFavorit, removeFavorite, favorites } = useContext(BookListContext);
 
     let favoritesId = [];
@@ -15,7 +15,8 @@ function BookDetails({ book, bookId, setDescription }) {
     return <Card className={favoritesId.includes(book.id) ? classes.unList : classes.List}>
         <Card.Img
             variant="top"
-            src={book.volumeInfo.imageLinks.smallThumbnail}
+            src={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : 
+            "https://cdn.pixabay.com/photo/2015/07/27/20/16/book-863418__340.jpg"}
             className={classes.image}
         />
         <Card.Body>
