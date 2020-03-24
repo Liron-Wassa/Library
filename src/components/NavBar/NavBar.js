@@ -9,7 +9,7 @@ function NavBar() {
     const { favorites } = useContext(BookListContext);
 
     return <Navbar bg="dark" variant="dark" sticky="top">
-        <Navbar.Brand>Navbar</Navbar.Brand>
+        <Navbar.Brand>Library</Navbar.Brand>
         <Nav className="mr-auto">
           <div className={classes.navBar}>
             <Link to="/" className={classes.navBar}>Home</Link>
