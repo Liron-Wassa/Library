@@ -13,8 +13,6 @@ function BookListContextProvider(props) {
     let findBooks = (book) => {        
         setLoad(true);
         axios.get(`https://www.googleapis.com/books/v1/volumes?q=search+${book}`).then(res => {
-            // console.log(res.data.items[0].volumeInfo.imageLinks.thumbnail, res.data.items);
-            
             if(res.status === 200){
                 setBooks(res.data.items);
                 setLoad(false);
