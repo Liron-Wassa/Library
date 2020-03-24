@@ -10,7 +10,7 @@ function BookListContextProvider(props) {
     const [books, setBooks] = useState([]);
     const error = "Not found";
 
-    let findBooks = (book) => {
+    let findBooks = (book) => {        
         setLoad(true);
         axios.get(`https://www.googleapis.com/books/v1/volumes?q=search+${book}`).then(res => {
             if(res.status === 200){

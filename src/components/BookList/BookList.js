@@ -12,7 +12,7 @@ function BookList() {
     const [description, setDescription] = useState("");
     const { indexOfFirstBooks, indexOfLastBooks, booksPerPage } = useContext(PaginationContext);
     const { books, error, isLoading } = useContext(BookListContext);
-    const currentBooks = books.slice(indexOfFirstBooks, indexOfLastBooks);
+    let currentBooks;
     let booksElemnt;
 
     if(description.length){
@@ -20,7 +20,11 @@ function BookList() {
             pathname: `/description`,
             description: description
         }}/>
-    } 
+    }
+
+    if(books){
+        currentBooks = books.slice(indexOfFirstBooks, indexOfLastBooks);
+    }
 
     if(!isLoading){
         if(currentBooks){
@@ -37,8 +41,8 @@ function BookList() {
     }
 
     return <div>
-        {books.length ? <div className={classes.pagination}>
-            <Paginations booksPerPage={booksPerPage} totalBooks={books.length} />
+        {books && books.length ? <div className={classes.pagination}>
+            <Paginations booksPerPage={booksPerPage} totalBooks={books.length} from="BOOK_LIST" />
         </div> : null}
         <div className={classes.BookList}>
             {booksElemnt}

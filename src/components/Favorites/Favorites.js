@@ -1,17 +1,17 @@
 import { PaginationContext } from '../../contexts/PaginationContext';
 import { BookListContext } from '../../contexts/BookListContext';
 import BookDetails from '../BookDetails/BookDetails';
+import React, { useContext, useState } from 'react';
 import Paginations from '../Pagination/Pagination';
 import classes from './Favorite.module.css';
-import React, { useContext, useState } from 'react';
 import { Redirect } from 'react-router';
 
 function Favorites() {
     
     const [description, setDescription] = useState("");
     const { favorites } = useContext(BookListContext);
-    const { indexOfFirstBooks, indexOfLastBooks, booksPerPage } = useContext(PaginationContext);
-    const currentBooks = favorites.slice(indexOfFirstBooks, indexOfLastBooks);
+    const { indexOfFirstFaveBooks, indexOfLastFaveBooks, booksPerPage } = useContext(PaginationContext);
+    const currentBooks = favorites.slice(indexOfFirstFaveBooks, indexOfLastFaveBooks);
         
     if(description.length){
         return <Redirect to={{
@@ -27,7 +27,9 @@ function Favorites() {
     return <div>
         <h1 className={classes.header}>Favorites</h1>
         <div className={classes.pagination}>
-            {favorites.length ? <Paginations booksPerPage={booksPerPage} totalBooks={favorites.length} /> : null}
+            {favorites.length ?
+                <Paginations booksPerPage={booksPerPage} totalBooks={favorites.length} from="FAVORITE_LIST" />
+            : null}
         </div>
 
         <div className={classes.FavoriteList}>
